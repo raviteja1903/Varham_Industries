@@ -1,5 +1,5 @@
 import React from "react";
-import "./OurCapabilities.css"
+import "./OurCapabilities.css";
 
 const OurCapabilities = () => {
   return (
@@ -17,14 +17,15 @@ const OurCapabilities = () => {
         unprecedented precision and scale. It’s the brain behind the brawn,
         enabling autonomous collaboration and dynamic mission execution.
       </p>
- 
+
       <h2 className="subsection-title">Autonomous Counter-UAS Robotics</h2>
       <ul className="capabilities-list">
         <li>
           <strong>Description:</strong> A fully integrated robotic system
           designed for dynamic air defense. This solution comprises autonomous
-          sensing platforms that employ advanced perception algorithms to detect,
-          classify, and track hostile UAS threats, even in complex environments.
+          sensing platforms that employ advanced perception algorithms to
+          detect, classify, and track hostile UAS threats, even in complex
+          environments.
         </li>
         <li>
           <strong>Autonomous Deployment:</strong> When a threat is identified,
@@ -37,8 +38,10 @@ const OurCapabilities = () => {
           with minimal human intervention.
         </li>
       </ul>
- 
-      <h2 className="subsection-title">Persistent ISR (Intelligence, Surveillance, & Reconnaissance) Robotics</h2>
+
+      <h2 className="subsection-title">
+        Persistent ISR (Intelligence, Surveillance, & Reconnaissance) Robotics
+      </h2>
       <ul className="capabilities-list">
         <li>
           <strong>Description:</strong> A fully integrated robotic system
@@ -47,9 +50,9 @@ const OurCapabilities = () => {
           UAS threats, even in complex environments.
         </li>
         <li>
-          <strong>Autonomous Deployment:</strong> Robotic effectors (high-precision
-          interception drones or directed energy systems) are autonomously
-          deployed and tasked via VAJRA OS to neutralize targets.
+          <strong>Autonomous Deployment:</strong> Robotic effectors
+          (high-precision interception drones or directed energy systems) are
+          autonomously deployed and tasked via VAJRA OS to neutralize targets.
         </li>
         <li>
           <strong>Outcome:</strong> Ensures rapid and effective surveillance and
@@ -57,36 +60,54 @@ const OurCapabilities = () => {
         </li>
       </ul>
 
-       <h2 className="subsection-title">Multi-Mission Autonomous Ground Robotics (AGR)</h2>
+      <h2 className="subsection-title">
+        Multi-Mission Autonomous Ground Robotics (AGR)
+      </h2>
       <ul className="capabilities-list">
         <li>
-          <strong>Description:</strong> These are the workhorses of the future battlefield. Our AGRs are rugged, intelligent, and highly modular robotic platforms designed for a multitude of dangerous and dull tasks.
+          <strong>Description:</strong> These are the workhorses of the future
+          battlefield. Our AGRs are rugged, intelligent, and highly modular
+          robotic platforms designed for a multitude of dangerous and dull
+          tasks.
         </li>
         <li>
-          <strong>Autonomous Resupply & Patrol:</strong> Autonomous resupply convoys traverse hostile territory. Robotic perimeter patrol with integrated threat detection in austere environments.
+          <strong>Autonomous Resupply & Patrol:</strong> Autonomous resupply
+          convoys traverse hostile territory. Robotic perimeter patrol with
+          integrated threat detection in austere environments.
         </li>
         <li>
-          <strong>Unmanned Combat & EOD:</strong> Support in close quarters or Explosive Ordnance Disposal (EOD) missions, extending human reach and safety.
+          <strong>Unmanned Combat & EOD:</strong> Support in close quarters or
+          Explosive Ordnance Disposal (EOD) missions, extending human reach and
+          safety.
         </li>
         <li>
-          <strong>Capabilities:</strong> Leverages advanced locomotion, manipulation, and perception to operate effectively in austere environments.
+          <strong>Capabilities:</strong> Leverages advanced locomotion,
+          manipulation, and perception to operate effectively in austere
+          environments.
         </li>
       </ul>
 
-    
       <h2 className="subsection-title">Networked Autonomous Munitions</h2>
       <ul className="capabilities-list">
         <li>
-          <strong>Description:</strong> Cost-effective, intelligent robotic munition systems designed for mass deployment and precise engagement.
+          <strong>Description:</strong> Cost-effective, intelligent robotic
+          munition systems designed for mass deployment and precise engagement.
         </li>
         <li>
-          <strong>Autonomous & Expendable:</strong> Unlike traditional munitions, these are sophisticated, expendable autonomous agents that can be air or ground launched.
+          <strong>Autonomous & Expendable:</strong> Unlike traditional
+          munitions, these are sophisticated, expendable autonomous agents that
+          can be air or ground launched.
         </li>
         <li>
-          <strong>VAJRA OS Command:</strong> Powered by VAJRA OS, they dynamically network to share targeting data, identify optimal engagement parameters, and collaboratively execute complex strike missions.
+          <strong>VAJRA OS Command:</strong> Powered by VAJRA OS, they
+          dynamically network to share targeting data, identify optimal
+          engagement parameters, and collaboratively execute complex strike
+          missions.
         </li>
         <li>
-          <strong>Outcome:</strong> Overwhelm adversaries with distributed, intelligent firepower against armored formations, air defenses, or high-value targets.
+          <strong>Outcome:</strong> Overwhelm adversaries with distributed,
+          intelligent firepower against armored formations, air defenses, or
+          high-value targets.
         </li>
       </ul>
     </div>

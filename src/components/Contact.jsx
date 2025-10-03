@@ -1,8 +1,8 @@
-import React from "react";
-import "./Career.css";
+import React from 'react'
+import "./Contact.css"
 
-const Career = () => {
-  return (
+const Contact = () => {
+   return (
     <div className="career-container">
       <span className="career-subtitle">Career</span>
       <h1 className="career-title">Serve a Mission Greater Than Yourself</h1>
@@ -29,4 +29,5 @@ const Career = () => {
   );
 };
 
-export default Career;
+export default Contact
+

@@ -2,11 +2,9 @@ import React from "react";
 import Hero from "./components/Hero";
 import "./App.css";
 import Cards from "./components/Cards";
-
 import Footer from "./components/Footer";
-import OurCapabilities from "./components/ourcapabilities";
-import Career from "./components/career";
- 
+import Contact from "./components/Contact";
+import OurDetails from "./components/OurDetails";
 
 const App = () => {
   return (
@@ -14,8 +12,8 @@ const App = () => {
       {/* <Navbar/> */}
       <Hero />
       <Cards />
-      <OurCapabilities/>
-      <Career />
+      <OurDetails />
+      <Contact />
       <Footer />
     </div>
   );

@@ -1,8 +1,7 @@
-import React from "react";
-import "./OurCapabilities.css";
-
-const OurCapabilities = () => {
-  return (
+import React from 'react'
+import "./OurDetails.css"
+const OurDetails = () => {
+   return (
     <div className="ourcapabilities">
       <span className="section-subtitle">Our Capabilities</span>
       <h1 className="section-title">
@@ -114,4 +113,5 @@ const OurCapabilities = () => {
   );
 };
 
-export default OurCapabilities;
+export default OurDetails
+

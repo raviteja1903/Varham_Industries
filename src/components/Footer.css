@@ -1,0 +1,10 @@
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #0d0f17;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 14px;
+  border-top: 1px solid #222;
+}

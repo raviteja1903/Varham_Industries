@@ -1,0 +1,146 @@
+ 
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+ 
+.ourcapabilities {
+  padding: 80px 20px;
+  margin: auto;
+  font-family: "Orbitron", sans-serif;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.95);
+ 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+ 
+.section-subtitle {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #00eaff;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards 0.2s;
+}
+
+ 
+.section-title {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards 0.4s;
+}
+ 
+.section-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cccccc;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards 0.6s;
+}
+
+ 
+.subsection-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00eaff;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+ 
+.capabilities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 60px auto;
+  max-width: 800px;
+}
+
+ 
+.capabilities-list li {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 12px 0;
+  padding: 14px 18px;
+  border-radius: 12px;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #cccccc;
+  position: relative;
+  text-align: left;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInRight 0.5s forwards;
+  animation-delay: 0.2s; /* can adjust per item in React for stagger effect */
+  transition: transform 0.3s, background 0.3s;
+}
+
+ 
+.capabilities-list li:hover {
+  background: rgba(0, 234, 255, 0.1);
+  transform: translateX(5px);
+}
+ 
+.capabilities-list li::before {
+  content: "✔";
+  color: #00eaff;
+  font-weight: bold;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.capabilities-list strong {
+  color: #ffffff;
+}
+ 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .section-description,
+  .capabilities-list li {
+    font-size: 0.95rem;
+  }
+  .subsection-title {
+    font-size: 1.4rem;
+  }
+}

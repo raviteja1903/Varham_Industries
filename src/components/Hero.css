@@ -1,0 +1,108 @@
+ 
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+
+.hero-section {
+  min-height: 66vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  padding: 0rem;
+  margin: 0;
+  height: 100%;
+  font-family: "Orbitron", sans-serif;
+  background: rgba(0, 0, 0, 0.95);
+  color: #fff;
+}
+
+ 
+.hero-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  max-width: 120px;
+  height: auto;
+  margin: 0; 
+}
+ 
+.hero-intro h1 {
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-intro h1 span {
+  color: #007bff;  
+}
+
+.hero-intro p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+ 
+@media (max-width: 768px) {
+  .hero-intro h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  .hero-intro p {
+    font-size: 1rem;
+  }
+  .hero-logo {
+    max-width: 90px;
+    top: 15px;
+    left: 15px;
+  }
+}
+ 
+.hero-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  max-width: 120px;
+  height: auto;
+  margin: 0;
+}
+ 
+.hero-intro h1 {
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-intro h1 span {
+  color: #007bff;  
+}
+
+.hero-intro p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  /* margin: 0 auto; */
+  line-height: 1.6;
+  opacity: 0.85;
+}
+ 
+@media (max-width: 768px) {
+  .hero-intro h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  .hero-intro p {
+    font-size: 1rem;
+  }
+  .hero-logo {
+    max-width: 90px;
+    top: 15px;
+    left: 15px;
+  }
+}

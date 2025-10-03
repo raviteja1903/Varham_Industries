@@ -6,6 +6,7 @@ import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import OurCapabilities from "./components/ourcapabilities";
 import Career from "./components/career";
+ 
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
       {/* <Navbar/> */}
       <Hero />
       <Cards />
-      <OurCapabilities />
+      <OurCapabilities/>
       <Career />
       <Footer />
     </div>

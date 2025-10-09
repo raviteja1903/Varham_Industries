@@ -1,5 +1,4 @@
- 
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 
 .hero-section {
   min-height: 66vh;
@@ -12,21 +11,21 @@
   padding: 0rem;
   margin: 0;
   height: 100%;
-  font-family: "Orbitron", sans-serif;
-  background: rgba(0, 0, 0, 0.95);
+  /* font-family: "Orbitron", sans-serif; */
+  font-family: "Gloria Hallelujah", cursive;
+  background: radial-gradient(circle at center, #050505 0%, #000 100%);
   color: #fff;
 }
 
- 
 .hero-logo {
   position: absolute;
   top: 20px;
   left: 20px;
   max-width: 120px;
   height: auto;
-  margin: 0; 
+  margin: 0;
 }
- 
+
 .hero-intro h1 {
   font-weight: 900;
   margin-bottom: 1.5rem;
@@ -36,7 +35,7 @@
 }
 
 .hero-intro h1 span {
-  color: #007bff;  
+  color: #007bff;
 }
 
 .hero-intro p {
@@ -47,7 +46,6 @@
   opacity: 0.85;
 }
 
- 
 @media (max-width: 768px) {
   .hero-intro h1 {
     font-size: 2rem;
@@ -62,7 +60,7 @@
     left: 15px;
   }
 }
- 
+
 .hero-logo {
   position: absolute;
   top: 20px;
@@ -71,7 +69,7 @@
   height: auto;
   margin: 0;
 }
- 
+
 .hero-intro h1 {
   font-weight: 900;
   margin-bottom: 1.5rem;
@@ -81,7 +79,7 @@
 }
 
 .hero-intro h1 span {
-  color: #007bff;  
+  color: #007bff;
 }
 
 .hero-intro p {
@@ -91,7 +89,7 @@
   line-height: 1.6;
   opacity: 0.85;
 }
- 
+
 @media (max-width: 768px) {
   .hero-intro h1 {
     font-size: 2rem;

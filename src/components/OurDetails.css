@@ -1,119 +1,132 @@
- 
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
- 
+/* Import a handwriting-style font (you can change it to any other from Google Fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
 .ourcapabilities {
-  padding: 80px 20px;
-  margin: auto;
-  font-family: "Orbitron", sans-serif;
+  padding: 80px 40px;
+  text-align: center;
+  font-family: "Gloria Hallelujah", cursive;
+  background: radial-gradient(circle at center, #050505 0%, #000 100%);
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.95);
- 
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
   overflow: hidden;
 }
 
- 
 .section-subtitle {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 700;
   color: #00eaff;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  text-align: center;
   letter-spacing: 2px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s forwards 0.2s;
-}
-
- 
-.section-title {
-  font-size: 2rem;
-  font-weight: 900;
-  line-height: 1.4;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #ffffff;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s forwards 0.4s;
-}
- 
-.section-description {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #cccccc;
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 60px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s forwards 0.6s;
-}
-
- 
-.subsection-title {
-  font-size: 1.6rem;
+  text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #00eaff;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s forwards;
+  animation: fadeInUp 0.6s ease forwards;
 }
 
- 
-.capabilities-list {
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin: 10px 0 20px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.section-description {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  color: #cccccc;
+  line-height: 1.7;
+  font-size: 1rem;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* === GRID LAYOUT === */
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* === CARD STYLING === */
+.capability-card {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 234, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  border: 1px solid rgba(0, 234, 255, 0.2);
+  border-radius: 18px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0, 234, 255, 0.1);
+  text-align: left;
+  transform: translateY(40px);
+  opacity: 0;
+  animation: slideUp 0.8s forwards ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.capability-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 234, 255, 0.15), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.capability-card:hover::before {
+  opacity: 1;
+}
+
+.capability-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 234, 255, 0.25);
+}
+
+.capability-card h2 {
+  font-size: 1.3rem;
+  color: #00eaff;
+  margin-bottom: 10px;
+}
+
+.cap-desc {
+  font-size: 0.95rem;
+  color: #d0d0d0;
+  margin-bottom: 10px;
+}
+
+.capability-card ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto 60px auto;
-  max-width: 800px;
 }
 
- 
-.capabilities-list li {
-  background: rgba(255, 255, 255, 0.05);
-  margin: 12px 0;
-  padding: 14px 18px;
-  border-radius: 12px;
+.capability-card li {
+  margin: 10px 0;
   line-height: 1.6;
-  font-size: 1rem;
-  color: #cccccc;
+  font-size: 0.95rem;
   position: relative;
-  text-align: left;
-  opacity: 0;
-  transform: translateX(-20px);
-  animation: fadeInRight 0.5s forwards;
-  animation-delay: 0.2s; /* can adjust per item in React for stagger effect */
-  transition: transform 0.3s, background 0.3s;
+  padding-left: 20px;
+  color: #cccccc;
 }
 
- 
-.capabilities-list li:hover {
-  background: rgba(0, 234, 255, 0.1);
-  transform: translateX(5px);
-}
- 
-.capabilities-list li::before {
-  content: "✔";
+.capability-card li::before {
+  content: "➤";
   color: #00eaff;
-  font-weight: bold;
   position: absolute;
-  left: -25px;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 0;
+  top: 2px;
 }
 
-.capabilities-list strong {
+.capability-card strong {
   color: #ffffff;
 }
- 
+
+/* === ANIMATIONS === */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(25px);
   }
   100% {
     opacity: 1;
@@ -121,26 +134,26 @@
   }
 }
 
-@keyframes fadeInRight {
+@keyframes slideUp {
   0% {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateY(40px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
   .section-title {
     font-size: 1.6rem;
   }
-  .section-description,
-  .capabilities-list li {
-    font-size: 0.95rem;
+  .section-description {
+    font-size: 0.9rem;
   }
-  .subsection-title {
-    font-size: 1.4rem;
+  .capability-card h2 {
+    font-size: 1.1rem;
   }
 }

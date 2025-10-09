@@ -1,15 +1,19 @@
- 
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 
+/* 🌌 Main container */
 .career-container {
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Handlee", cursive;
   color: #ffffff;
-    background: rgba(0, 0, 0, 0.95);;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  background: radial-gradient(circle at center, #050505 0%, #000 100%);
+  background-size: 400% 400%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
 }
 
+/* ✨ Subtitle */
 .career-subtitle {
   display: block;
   font-size: 18px;
@@ -19,87 +23,77 @@
   text-transform: uppercase;
 }
 
+/* 🌟 Title */
 .career-title {
   font-size: 36px;
   margin-bottom: 20px;
   color: #ffffff;
 }
 
+/* 📝 Description */
 .career-description {
   font-size: 18px;
   line-height: 1.7;
   color: #d1d1d1;
-  margin-bottom: 40px;
+  max-width: 850px;
+  margin: 0 auto 40px auto;
 }
 
- 
-.career-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.form-row {
-  display: flex;
-  gap: 20px;
-}
-
-.career-form input,
-.career-form textarea {
-  flex: 1;
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid #555;
-  background: #1a1c27;
-  color: #ffffff;
-  font-size: 16px;
-  outline: none;
-}
-
-.career-form input::placeholder,
-.career-form textarea::placeholder {
-  color: #999;
-}
-
-.career-form textarea {
-  resize: none;
-}
-
-.career-form button {
-  padding: 15px;
-  font-size: 18px;
-  background: #00f6ff;
+/* 💌 Email Link Button */
+.email-link {
+  display: inline-block;
+  padding: 16px 34px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #00f6ff, #00c0cc);
   color: #0d0f17;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
+  text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease;
-  width: 150px;
-  align-self: center;
+  font-size: 18px;
+  box-shadow: 0 0 15px #00f6ff, 0 0 25px #00c0cc;
+  position: relative;
+  z-index: 1;
 }
 
-.career-form button:hover {
-  background: #00c0cc;
+/* 💥 Hover Effect */
+.email-link:hover {
+  background: linear-gradient(90deg, #00c0cc, #00f6ff);
   transform: scale(1.05);
+  box-shadow: 0 0 25px #00f6ff, 0 0 50px #00f6ff;
 }
 
- 
-@media screen and (max-width: 768px) {
-  .form-row {
-    flex-direction: column;
-  }
+/* 🌈 Glowing aura behind button */
+.email-link::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 60px;
+  background: radial-gradient(circle, rgba(0, 246, 255, 0.4), transparent 70%);
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
 
+.email-link:hover::before {
+  opacity: 1;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
   .career-title {
     font-size: 28px;
   }
 
   .career-description {
     font-size: 16px;
+    padding: 0 10px;
   }
 
-  .career-form button {
+  .email-link {
     font-size: 16px;
-    width: 100%;
+    padding: 12px 24px;
   }
 }

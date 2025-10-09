@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 
 .about-container {
   /* background-color: #0d0f17;   */
@@ -10,11 +10,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Orbitron', sans-serif;
-   background: rgba(0, 0, 0, 0.95); 
+  font-family: "Gloria Hallelujah", cursive;
+  background: radial-gradient(circle at center, #050505 0%, #000 100%);
 }
 
- 
 .about-content h1 {
   font-size: 3rem;
   font-weight: 900;
@@ -31,7 +30,6 @@
   color: #ddd;
 }
 
- 
 .about-text p {
   max-width: 900px;
   font-size: 1.2rem;
@@ -41,7 +39,6 @@
   text-align: justify;
 }
 
- 
 @media (max-width: 1024px) {
   .about-content h1 {
     font-size: 2.5rem;

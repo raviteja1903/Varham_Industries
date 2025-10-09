@@ -1,8 +1,9 @@
-import React from 'react'
-import "./Contact.css"
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Contact.css";
 
 const Contact = () => {
-   return (
+  return (
     <div className="career-container">
       <span className="career-subtitle">Career</span>
       <h1 className="career-title">Serve a Mission Greater Than Yourself</h1>
@@ -16,18 +17,20 @@ const Contact = () => {
         solve real-world problems and want your work to have a tangible impact
         on national security, your mission starts here.
       </p>
- 
-      <form className="career-form">
-        <div className="form-row">
-          <input type="text" placeholder="Your Name *" required />
-          <input type="email" placeholder="Email *" required />
-        </div>
-        <textarea placeholder="Any Comments" rows="5" required></textarea>
-        <button type="submit">SUBMIT</button>
-      </form>
+
+      <div className="career-email">
+        <p>Contact us at:</p>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=careers@varham.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="email-link"
+        >
+          careers@varham.com
+        </a>
+      </div>
     </div>
   );
 };
 
-export default Contact
-
+export default Contact;

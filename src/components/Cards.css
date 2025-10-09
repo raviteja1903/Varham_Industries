@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Open+Sans:wght@400&display=swap");
+
 .cards-container {
   display: flex;
   justify-content: center;
@@ -7,22 +8,23 @@
   flex-wrap: wrap;
   padding: 40px;
   background: radial-gradient(circle at center, #050505 0%, #000 100%);
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* === Image Card === */
 .image-card {
   position: relative;
   width: 340px;
-  height: 420px; /* ⬆ Increased height */
+  height: 420px;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
 }
 
 /* === Image Styling === */
@@ -46,42 +48,54 @@
   background: rgba(5, 5, 5, 0.88);
   color: #fff;
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: left;
   padding: 25px;
+  transform: translateY(10px);
 }
 
 .image-card:hover .overlay {
   opacity: 1;
+  transform: translateY(0);
 }
 
 /* === Headings === */
 .overlay h3 {
+  font-family: "Orbitron", sans-serif;
   font-size: 22px;
   margin-bottom: 12px;
   color: #00ffe0;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
 }
 
 /* === Paragraph === */
 .overlay p {
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #e5e5e5;
+  
+  margin-bottom: 10px;
 }
 
 /* === List Styling === */
 .overlay ul {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 25px;
   margin-top: 10px;
+  text-align: left;
 }
 
 .overlay li {
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.5;
@@ -90,6 +104,27 @@
 
 .overlay strong {
   color: #00ffe0;
+}
+
+/* === Subtle Glow Hover === */
+.image-card:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+  pointer-events: none;
+  animation: glowPulse 1.6s infinite alternate;
+}
+
+/* === Glow Animation === */
+@keyframes glowPulse {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 0.8;
+  }
 }
 
 /* === Responsive Design === */
@@ -101,7 +136,7 @@
 
   .image-card {
     width: 90%;
-    height: 500px; /* ⬆ More height for mobile too */
+    height: 500px;
   }
 
   .overlay {

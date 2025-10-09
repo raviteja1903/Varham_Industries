@@ -1,16 +1,17 @@
- @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Open+Sans:wght@400&display=swap");
 
 /* 🌌 Main container */
 .career-container {
   padding: 60px 20px;
   text-align: center;
-  font-family: "Handlee", cursive;
+  font-family: "Orbitron", sans-serif;
   color: #ffffff;
   background: radial-gradient(circle at center, #050505 0%, #000 100%);
   background-size: 400% 400%;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
   position: relative;
   overflow: hidden;
+  animation: fadeInBg 8s ease-in-out infinite alternate;
 }
 
 /* ✨ Subtitle */
@@ -18,16 +19,24 @@
   display: block;
   font-size: 18px;
   color: #00f6ff;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   margin-bottom: 10px;
   text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Orbitron", sans-serif;
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 /* 🌟 Title */
 .career-title {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 20px;
   color: #ffffff;
+  font-weight: 700;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInUp 1s ease forwards;
 }
 
 /* 📝 Description */
@@ -37,6 +46,8 @@
   color: #d1d1d1;
   max-width: 850px;
   margin: 0 auto 40px auto;
+  font-family: "Open Sans", sans-serif;
+  animation: fadeInUp 1.2s ease forwards;
 }
 
 /* 💌 Email Link Button */
@@ -52,12 +63,15 @@
   box-shadow: 0 0 15px #00f6ff, 0 0 25px #00c0cc;
   position: relative;
   z-index: 1;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
 }
 
 /* 💥 Hover Effect */
 .email-link:hover {
   background: linear-gradient(90deg, #00c0cc, #00f6ff);
-  transform: scale(1.05);
+  transform: scale(1.07);
   box-shadow: 0 0 25px #00f6ff, 0 0 50px #00f6ff;
 }
 
@@ -81,10 +95,32 @@
   opacity: 1;
 }
 
+/* ✨ Subtle background animation */
+@keyframes fadeInBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* 🌠 Text animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* 📱 Responsive Design */
 @media screen and (max-width: 768px) {
   .career-title {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .career-description {

@@ -1,27 +1,33 @@
-/* Import a handwriting-style font (you can change it to any other from Google Fonts) */
-@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@400&display=swap"); */
+
+ @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400&display=swap");
 
 .ourcapabilities {
   padding: 80px 40px;
   text-align: center;
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "Bebas Neue", sans-serif;
   background: radial-gradient(circle at center, #050505 0%, #000 100%);
   color: #ffffff;
   overflow: hidden;
 }
 
+/* === TYPOGRAPHY === */
 .section-subtitle {
   color: #00eaff;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
   animation: fadeInUp 0.6s ease forwards;
 }
 
 .section-title {
-  font-size: 2.2rem;
-  font-weight: 900;
+  font-size: 2.4rem;
+  font-weight: 700;
   margin: 10px 0 20px;
+  letter-spacing: 1px;
+  font-family: "Bebas Neue", sans-serif;
   animation: fadeInUp 0.8s ease forwards;
 }
 
@@ -31,6 +37,7 @@
   color: #cccccc;
   line-height: 1.7;
   font-size: 1rem;
+  font-family: "Roboto", sans-serif;
   animation: fadeInUp 1s ease forwards;
 }
 
@@ -85,15 +92,18 @@
 }
 
 .capability-card h2 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #00eaff;
   margin-bottom: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
 }
 
 .cap-desc {
   font-size: 0.95rem;
   color: #d0d0d0;
   margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .capability-card ul {
@@ -108,6 +118,7 @@
   position: relative;
   padding-left: 20px;
   color: #cccccc;
+  font-family: "Roboto", sans-serif;
 }
 
 .capability-card li::before {
@@ -148,12 +159,12 @@
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   .section-title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .section-description {
     font-size: 0.9rem;
   }
   .capability-card h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }

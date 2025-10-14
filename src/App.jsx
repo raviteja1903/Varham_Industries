@@ -5,6 +5,8 @@ import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import OurDetails from "./components/OurDetails";
+import CareerContact from "./components/CareerContact";
+import ResearchDevelopment from "./components/ResearchDevelopment";
 
 const App = () => {
   return (
@@ -12,8 +14,10 @@ const App = () => {
       {/* <Navbar/> */}
       <Hero />
       <Cards />
+      <ResearchDevelopment />
       <OurDetails />
       <Contact />
+      <CareerContact />
       <Footer />
     </div>
   );

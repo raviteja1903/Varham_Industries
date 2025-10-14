@@ -8,26 +8,33 @@ const Contact = () => {
       <span className="career-subtitle">Career</span>
       <h1 className="career-title">Serve a Mission Greater Than Yourself</h1>
       <p className="career-description">
-        We are assembling a team of India’s most brilliant engineers, mission
-        experts, and builders. At Varham, you won’t be optimizing ad clicks or
-        building disposable apps. You will be writing code, designing hardware,
-        and building systems that directly contribute to the security and
-        sovereignty of our nation. This work matters. We have created a culture
-        that rewards speed, innovation, and ownership. If you are driven to
-        solve real-world problems and want your work to have a tangible impact
-        on national security, your mission starts here.
+        Working at Varham Industries means serving a mission far beyond
+        conventional technology. The systems we build directly influence
+        national defence and global security, reinforcing the objectives of
+        those who safeguard peace and stability. This is not an environment for
+        consumer applications or routine platforms; it is where advanced systems
+        are engineered to support strategic deterrence and operational
+        superiority.
+        <br />
+        We operate with discipline, urgency and purpose. Every individual is
+        expected to take ownership, uphold accountability and push the limits of
+        capability. Our culture is built on trust, precision and an
+        uncompromising commitment to excellence, driven by the responsibility to
+        secure the future.
       </p>
 
       <div className="career-email">
-        <p>Contact us at:</p>
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=careers@varham.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="email-link"
-        >
-          careers@varham.com
-        </a>
+        <p>
+          Contact for Careers:{" "}
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=careers@varhamindustries.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="email-link"
+          >
+            careers@varhamindustries.com
+          </a>
+        </p>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Open+Sans:wght@400&display=swap");
-
 .about-container {
   /* background-color: #0d0f17;   */
   color: #fff;
@@ -20,7 +19,7 @@
   margin-bottom: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #007bff; /* Highlighted blue */
+  color: #007bff;
   font-family: "Orbitron", sans-serif;
 }
 
@@ -36,7 +35,7 @@
   max-width: 900px;
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #ccc;
+  color: whitesmoke;
   opacity: 0.9;
   text-align: justify;
 }

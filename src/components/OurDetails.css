@@ -1,25 +1,22 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@400&display=swap"); */
-
- @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400&display=swap");
 
 .ourcapabilities {
   padding: 80px 40px;
   text-align: center;
-  font-family: "Bebas Neue", sans-serif;
+
   background: radial-gradient(circle at center, #050505 0%, #000 100%);
   color: #ffffff;
   overflow: hidden;
 }
 
-/* === TYPOGRAPHY === */
 .section-subtitle {
-  color: #00eaff;
+  color: #007bff;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-size: 2.2rem;
   font-weight: 700;
-  font-family: "Bebas Neue", sans-serif;
-  animation: fadeInUp 0.6s ease forwards;
+  font-family: "Orbitron", sans-serif;
+  /* animation: fadeInUp 0.6s ease forwards; */
 }
 
 .section-title {
@@ -27,7 +24,7 @@
   font-weight: 700;
   margin: 10px 0 20px;
   letter-spacing: 1px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Orbitron", sans-serif;
   animation: fadeInUp 0.8s ease forwards;
 }
 
@@ -41,7 +38,6 @@
   animation: fadeInUp 1s ease forwards;
 }
 
-/* === GRID LAYOUT === */
 .capabilities-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -50,7 +46,6 @@
   align-items: stretch;
 }
 
-/* === CARD STYLING === */
 .capability-card {
   background: linear-gradient(
     135deg,

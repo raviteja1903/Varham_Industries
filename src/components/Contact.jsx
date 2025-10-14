@@ -15,7 +15,7 @@ const Contact = () => {
         consumer applications or routine platforms; it is where advanced systems
         are engineered to support strategic deterrence and operational
         superiority.
-        <br />
+        <br /> <br />
         We operate with discipline, urgency and purpose. Every individual is
         expected to take ownership, uphold accountability and push the limits of
         capability. Our culture is built on trust, precision and an

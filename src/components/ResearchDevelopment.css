@@ -1,13 +1,12 @@
- 
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap");
- 
+
 .research-section01 {
   background: radial-gradient(circle at center, #050505 0%, #000 100%);
   padding: 80px 10%;
   font-family: "Roboto", sans-serif;
   line-height: 1.8;
 }
- 
+
 .research-title01 {
   color: #ffffff;
   font-family: "Orbitron", sans-serif;
@@ -20,11 +19,11 @@
 }
 
 .research-title01 .highlight01 {
-  color: #007bff;  
+  color: #007bff;
 }
 
 .research-subheading01 {
-   color: #007bff;
+  color: #007bff;
   font-family: "Orbitron", sans-serif;
   font-size: 2rem;
   font-weight: 600;
@@ -34,17 +33,17 @@
   text-transform: uppercase;
 }
 
- 
 .research-section01 p {
-  color: #9e9e9e;  
-  font-size: 1.05rem;
+  color: #9e9e9e;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.9;
   text-align: justify;
   max-width: 900px;
   margin: 0 auto 20px;
+ font-family: "Open Sans", sans-serif;
 }
- 
+
 @media (max-width: 768px) {
   .research-section01 {
     padding: 60px 8%;
